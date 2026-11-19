@@ -1,7 +1,7 @@
 # Project: MEP consultant portfolio website
 
 - The whole site is `index.html` (single file, no build). Published by GitHub Pages from `main`.
-- Owner: MEP engineering consultant based in Riyadh, KSA.
+- Business: Azmi MEP Consultants (Arabic: عزمي), Riyadh, KSA.
 
 ## Working rules
 - For any change: commit on the session branch → open a PR → squash-merge it. Do not ask for approval.
