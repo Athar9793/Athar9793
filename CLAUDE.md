@@ -15,3 +15,4 @@
 - Colours: navy #102A43, blue #176B91, teal #00A6A6, silver #B8C4CE, light grey #F3F6F8. Fonts: Montserrat (headings), Inter (body).
 - Logo files live in `branding/` (built from SVG; text converted to paths).
 - 24 image slots: files go in `images/<folder>/<name>.webp` as listed in `images/README.md`; missing files fall back to a navy blueprint placeholder.
+- Extra pages: `services/*.html` (one per service card) and `blog/*.html` (one per post) are generated from index.html content; each has its own small Arabic translation map.
