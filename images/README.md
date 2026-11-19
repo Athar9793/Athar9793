@@ -1,6 +1,6 @@
 # Azmi MEP Consultants: website image brief
 
-**Status: real site photos and sharp images now cover most slots. Still needed (sharp, no people): 08 cost estimation, 09 tendering, 12 Primavera schedule, 21 design office, 22 BIM cutaway.**
+**Status: complete. All image slots use sharp generated images or real site photos.**
 
 Do not use these images as photographs of real Azmi MEP projects; the gallery is labelled *illustrative*.
 
