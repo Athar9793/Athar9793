@@ -35,6 +35,7 @@ form{display:grid;gap:12px;margin-top:18px}
 input,textarea{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}
 textarea{min-height:120px;resize:vertical}
 button.btn{border:0;cursor:pointer;font:inherit;font-weight:600;justify-self:start}
+iframe.map{width:100%;height:300px;border:0;border-radius:12px;margin-top:18px}
 footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 @media(max-width:640px){nav ul{display:none}}
 </style>
@@ -84,7 +85,7 @@ footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var
 
 <section id="contact"><div class="wrap">
 <h2>Contact</h2>
-<div class="card"><p>Available for consultancy, estimation and project support.</p>
+<div class="card"><p>Based in Riyadh, KSA. Available for consultancy, estimation and project support.</p>
 <p style="margin-top:10px">📧 <a href="mailto:abuathar786@gmail.com">abuathar786@gmail.com</a> &nbsp; · &nbsp; 💼 <a href="https://www.linkedin.com/in/abu-athar-74a0a7193">LinkedIn</a> &nbsp; · &nbsp; 🐙 <a href="https://github.com/Athar9793">GitHub</a></p><form id="cf">
 <input name="name" placeholder="Your name" required>
 <input name="email" type="email" placeholder="Your email" required>
@@ -96,6 +97,7 @@ document.getElementById('cf').addEventListener('submit',function(e){e.preventDef
 location.href='mailto:abuathar786@gmail.com?subject='+encodeURIComponent('Website enquiry from '+f.name.value)+'&body='+encodeURIComponent(f.msg.value+'\n\n'+f.name.value+' ('+f.email.value+')');});
 </script>
 </div>
+<iframe class="map" title="Location: Riyadh, Saudi Arabia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Riyadh,+Saudi+Arabia&output=embed"></iframe>
 </div></section>
 
 <footer><div class="wrap">© 2026 Athar · MEP Consultant</div></footer>
