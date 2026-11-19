@@ -1,6 +1,6 @@
 # Azmi MEP Consultants: website image brief
 
-**Status: 6 of 24 added (01, 02, 03, 04, 05, 06). The rest are still placeholders.** The site already has a slot for each one. Generate the image, save it as WebP (1920×1080 for 01, 1280×720 for the rest, quality ~80) at the exact path below, merge, and it appears automatically. Until then each slot shows a navy blueprint placeholder.
+**Status: all 24 added. 01–06 are full-size originals; 07–24 were cut from a ChatGPT contact sheet and upscaled to 960×540, so replace them with full-size versions when available (same file names).**
 
 Do not use these images as photographs of real Azmi MEP projects; the gallery is labelled *illustrative*.
 
