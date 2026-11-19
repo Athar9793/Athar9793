@@ -10,3 +10,8 @@
 - Keep light/dark themes working: use the CSS colour variables, not hard-coded colours.
 - Check changes in headless Chromium (Playwright) for script errors before opening the PR.
 - Keep replies short and token usage low.
+
+## Brand
+- Colours: navy #102A43, blue #176B91, teal #00A6A6, silver #B8C4CE, light grey #F3F6F8. Fonts: Montserrat (headings), Inter (body).
+- Logo files live in `branding/` (built from SVG; text converted to paths).
+- 24 image slots: files go in `images/<folder>/<name>.webp` as listed in `images/README.md`; missing files fall back to a navy blueprint placeholder.
