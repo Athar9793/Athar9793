@@ -1,6 +1,6 @@
 # Azmi MEP Consultants: website image brief
 
-**Status: all 24 added. 01–06 are full-size originals; 07–24 were cut from a ChatGPT contact sheet and upscaled to 960×540, so replace them with full-size versions when available (same file names).**
+**Status: real site photos and sharp images now cover most slots. Still needed (sharp, no people): 08 cost estimation, 09 tendering, 12 Primavera schedule, 21 design office, 22 BIM cutaway.**
 
 Do not use these images as photographs of real Azmi MEP projects; the gallery is labelled *illustrative*.
 
