@@ -1,6 +1,6 @@
 # Azmi MEP Consultants: website image brief
 
-**Status: none of these 24 images exist yet.** The site already has a slot for each one. Generate the image, save it as WebP (1920×1080 for 01, 1280×720 for the rest, quality ~80) at the exact path below, merge, and it appears automatically. Until then each slot shows a navy blueprint placeholder.
+**Status: 6 of 24 added (01, 02, 03, 04, 05, 06). The rest are still placeholders.** The site already has a slot for each one. Generate the image, save it as WebP (1920×1080 for 01, 1280×720 for the rest, quality ~80) at the exact path below, merge, and it appears automatically. Until then each slot shows a navy blueprint placeholder.
 
 Do not use these images as photographs of real Azmi MEP projects; the gallery is labelled *illustrative*.
 
@@ -37,7 +37,7 @@ Photorealistic professional architectural/industrial photography, 16:9 landscape
 
 ### 06: Mep Bim Coordination Model
 - **File:** `images/bim-design/mep-bim-coordination-model.webp`
-- **Alt text:** 3D BIM coordination model of ducts, cable trays and pipes in a ceiling void
+- **Alt text:** Coordinated HVAC ducts, cable trays, sprinkler and plumbing pipes in an open ceiling
 - **Prompt:** Clean 3D BIM render of a commercial corridor ceiling void showing colour-coded systems: blue HVAC ducts, orange cable trays, green plumbing pipes and red sprinkler pipes, all coordinated without clashes; neutral grey building shell, isometric view. Photorealistic professional architectural/industrial photography, 16:9 landscape, 1920x1080 or larger, natural and soft directional lighting, sharp detail, cool colour grade with deep navy, steel grey and subtle teal tones, technically accurate MEP equipment and installations, modern Saudi Arabia/UAE commercial setting, no text, no readable labels, no logos, no watermarks, no distorted equipment, no exaggerated or artificial-looking people.
 
 ### 07: Mep Quantity Surveying Boq Review
