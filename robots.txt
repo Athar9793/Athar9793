@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://athar9793.github.io/Athar9793/sitemap.xml
