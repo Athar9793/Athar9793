@@ -7,7 +7,9 @@
 <meta name="description" content="MEP engineering consultant: design review, estimation, costing, project planning and facilities management.">
 <style>
 :root{--bg:#f7f8fa;--card:#fff;--ink:#1c2330;--muted:#5b6575;--accent:#0b6bcb;--line:#e3e7ee}
-@media (prefers-color-scheme:dark){:root{--bg:#0f141b;--card:#171e28;--ink:#e8edf4;--muted:#9aa6b8;--accent:#4da3ff;--line:#263042}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f141b;--card:#171e28;--ink:#e8edf4;--muted:#9aa6b8;--accent:#4da3ff;--line:#263042}}
+:root[data-theme=dark]{--bg:#0f141b;--card:#171e28;--ink:#e8edf4;--muted:#9aa6b8;--accent:#4da3ff;--line:#263042}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer;font:inherit}
 *{box-sizing:border-box;margin:0}
 body{font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
 a{color:var(--accent);text-decoration:none}
@@ -45,7 +47,7 @@ footer .row{display:flex;justify-content:space-between;align-items:center;flex-w
 </head>
 <body>
 <nav><div class="wrap"><b>Athar</b>
-<ul><li><a href="#services">Services</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#projects">Projects</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+<ul><li><a href="#services">Services</a></li><li><a href="#expertise">Expertise</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#projects">Projects</a></li><li><a href="#testimonials">Testimonials</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul><button id="theme" type="button" aria-label="Toggle dark mode">🌓</button></div></nav>
 
 <header><div class="wrap">
 <h1>MEP Engineering Consultant</h1>
@@ -132,5 +134,12 @@ location.href='mailto:abuathar786@gmail.com?subject='+encodeURIComponent('Websit
 
 <footer><div class="wrap row"><span>© 2026 Athar · MEP Consultant · Riyadh, KSA</span>
 <div class="social"><a href="https://www.linkedin.com/in/abu-athar-74a0a7193" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Athar9793" target="_blank" rel="noopener">GitHub</a><a href="mailto:abuathar786@gmail.com">Email</a></div></div></footer>
+<script>
+(function(){var r=document.documentElement,k='theme';
+try{var t=localStorage.getItem(k);if(t)r.setAttribute('data-theme',t)}catch(e){}
+document.getElementById('theme').addEventListener('click',function(){
+var dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+var n=dark?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem(k,n)}catch(e){}});})();
+</script>
 </body>
 </html>
