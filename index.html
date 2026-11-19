@@ -41,7 +41,10 @@ iframe.map{width:100%;height:300px;border:0;border-radius:12px;margin-top:18px}
 .price{font-size:26px;font-weight:700;margin:8px 0}.price small{font-size:14px;font-weight:400;color:var(--muted)}
 blockquote{font-style:italic;color:var(--muted);font-size:15px}cite{display:block;margin-top:10px;font-style:normal;font-size:14px;font-weight:600;color:var(--ink)}
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px}summary{cursor:pointer;font-weight:600}details p{color:var(--muted);font-size:15px;margin-top:10px}
-footer .row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}footer .social{display:flex;gap:16px}footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer .row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}footer .social{display:flex;gap:16px}html{scroll-behavior:smooth}
+#top{position:fixed;right:16px;bottom:16px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--accent);color:#fff;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;z-index:9}
+#top.show{opacity:1;pointer-events:auto}
+footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 @media(max-width:640px){nav ul{display:none}}
 </style>
 </head>
@@ -134,6 +137,12 @@ location.href='mailto:abuathar786@gmail.com?subject='+encodeURIComponent('Websit
 
 <footer><div class="wrap row"><span>© 2026 Athar · MEP Consultant · Riyadh, KSA</span>
 <div class="social"><a href="https://www.linkedin.com/in/abu-athar-74a0a7193" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Athar9793" target="_blank" rel="noopener">GitHub</a><a href="mailto:abuathar786@gmail.com">Email</a></div></div></footer>
+<button id="top" type="button" aria-label="Back to top">↑</button>
+<script>
+(function(){var b=document.getElementById('top');
+onscroll=function(){b.classList.toggle('show',scrollY>400)};
+b.onclick=function(){scrollTo({top:0,behavior:'smooth'})};})();
+</script>
 <script>
 (function(){var r=document.documentElement,k='theme';
 try{var t=localStorage.getItem(k);if(t)r.setAttribute('data-theme',t)}catch(e){}
