@@ -9,7 +9,7 @@
 <link rel="icon" href="branding/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="branding/favicon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <meta name="theme-color" content="#101F35">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Azmi MEP Consultants | Engineering Precision. Project Confidence.">
@@ -62,7 +62,7 @@ footer .row{display:flex;justify-content:space-between;align-items:center;flex-w
 #wa{position:fixed;left:16px;bottom:16px;width:52px;height:52px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25);z-index:9}#wa svg{width:28px;height:28px;fill:#fff}
 .stars{color:#fbbc04;font-size:22px;letter-spacing:2px;margin-bottom:6px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--ink)}.brand b{font-size:17px;white-space:nowrap}
-h1,h2,h3,.brand b,.price{font-family:Montserrat,Inter,sans-serif}h2{color:var(--ink)}h2::after{content:'';display:block;width:48px;height:3px;background:var(--teal);margin-top:10px}
+h1,h2,h3,.brand b,.price{font-family:Manrope,Inter,sans-serif}h2{color:var(--ink)}h2::after{content:'';display:block;width:48px;height:3px;background:var(--teal);margin-top:10px}
 .btn{color:var(--btn-ink)}
 .thumb{margin:-22px -22px 16px;aspect-ratio:16/9;border-radius:12px 12px 0 0;overflow:hidden;background:repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 1px,transparent 1px 24px),repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,transparent 1px 24px),linear-gradient(135deg,#101F35,#1B3655)}
 .thumb img,.gal .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.card:hover .thumb img,.gal figure:hover img{transform:scale(1.04)}
@@ -125,7 +125,7 @@ header p{font-size:clamp(16px,1.6vw,19px)!important;line-height:1.7;max-width:60
 .eyebrow{display:flex;align-items:center;gap:12px}
 .eyebrow::before{content:'';width:36px;height:2px;background:var(--teal)}
 header .stats{margin-top:56px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
-header .stats strong{font-family:Montserrat,Inter,sans-serif;font-size:30px}
+header .stats strong{font-family:Manrope,Inter,sans-serif;font-size:30px}
 header .eyebrow,header h1,header p,header .btn,header .stats{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
 header h1{animation-delay:.08s}header p{animation-delay:.16s}header .btn{animation-delay:.24s}header .stats{animation-delay:.34s}
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
@@ -171,7 +171,7 @@ footer a{color:#C9D4DE}footer a:hover{color:var(--teal)}
 .mvv{margin-top:40px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.mvv .card{border-top:3px solid var(--teal)}
 @media(max-width:820px){.about{grid-template-columns:1fr}}
 .mp{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}.mp ul{columns:2;column-gap:24px;padding-left:18px;margin-top:8px}[dir=rtl] .mp ul{padding-left:0;padding-right:18px}.mp li{break-inside:avoid;margin-bottom:6px}.mp .tag{margin-bottom:10px}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.step{position:relative;padding-top:56px!important}.step .n{position:absolute;top:18px;left:22px;font-family:Montserrat,Inter,sans-serif;font-weight:800;font-size:28px;color:var(--teal)}[dir=rtl] .step .n{left:auto;right:22px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.step{position:relative;padding-top:56px!important}.step .n{position:absolute;top:18px;left:22px;font-family:Manrope,Inter,sans-serif;font-weight:800;font-size:28px;color:var(--teal)}[dir=rtl] .step .n{left:auto;right:22px}
 @media(max-width:480px){.mp ul{columns:1}}
 
 .pres{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.ctry{border-top:3px solid var(--teal);text-align:center}.ctry .flag{font-size:44px;line-height:1;display:block;margin-bottom:10px}.ctry .loc{font-weight:600;color:var(--teal);margin:4px 0 8px}.ctry .loc::before{content:none}
@@ -193,6 +193,46 @@ nav#hdr ul a.active{color:#fff}nav#hdr ul a.active::after{transform:scaleX(1)}
 @media(max-width:1000px){.fgrid{grid-template-columns:1fr 1fr!important}}@media(max-width:560px){.fgrid{grid-template-columns:1fr!important}.fgrid2{grid-template-columns:1fr}}
 @media(max-width:480px){[dir=rtl] nav#hdr .brand b{display:none}}
 @media(max-width:560px){header .btn{display:block;text-align:center;margin:10px 0 0!important}}
+
+/* ===== Technical MEP theme layer ===== */
+:root{--bg:#F8FAFC;--card:#FFFFFF;--ink:#1E293B;--muted:#55657A;--accent:#2563EB;--teal:#0891B2;--line:#E2E8F0;--deep:#10243A;--slate:#334155;--btn:#0E7490;--grid:rgba(16,36,58,.035)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0B1828;--card:#12263D;--ink:#E8EEF4;--muted:#A9B6C4;--accent:#60A5FA;--teal:#22B8D6;--line:#22374F;--grid:rgba(255,255,255,.03)}}
+:root[data-theme=dark]{--bg:#0B1828;--card:#12263D;--ink:#E8EEF4;--muted:#A9B6C4;--accent:#60A5FA;--teal:#22B8D6;--line:#22374F;--grid:rgba(255,255,255,.03)}
+body{font-family:Inter,system-ui,sans-serif}
+h1,h2,h3,h4,.brand b{font-family:Manrope,Inter,sans-serif!important;letter-spacing:-.015em}
+.tag,.eyebrow,.crumbs,.date,.chipf,.step .n,footer h4{font-family:"IBM Plex Mono",ui-monospace,monospace!important;letter-spacing:.04em}
+section{background-color:var(--bg)!important;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px)!important;background-size:40px 40px!important}
+#about,#team,#careers,#projects{background-color:var(--card)!important}
+#services,#faq{background-color:color-mix(in srgb,var(--line) 45%,var(--bg))!important}
+#expertise,#contact,#site-work,.ctaband{--grid:rgba(255,255,255,.035);color:#E2E8F0}
+#expertise,#contact,.ctaband{background-color:var(--deep)!important}#site-work{background-color:var(--slate)!important}
+#expertise>.wrap>h2,#contact>.wrap>h2,#site-work>.wrap>h2,#site-work .lead{color:#fff}
+#expertise .card,#contact .card,#site-work figure{color:var(--ink)}
+h2::before{width:36px;height:2px;background:linear-gradient(90deg,var(--teal) 60%,transparent 60%,transparent 70%,var(--teal) 70%)}
+#expertise h2::before,#contact h2::before,#site-work h2::before{background:linear-gradient(90deg,#22B8D6 60%,transparent 60%,transparent 70%,#22B8D6 70%)}
+.card{border-radius:8px;position:relative;box-shadow:0 1px 2px rgba(16,36,58,.05)}
+.card::after{content:"";position:absolute;inset:7px;pointer-events:none;opacity:.55;--c:var(--d,var(--teal));
+background:linear-gradient(var(--c),var(--c)) top left/12px 1px no-repeat,linear-gradient(var(--c),var(--c)) top left/1px 12px no-repeat,linear-gradient(var(--c),var(--c)) bottom right/12px 1px no-repeat,linear-gradient(var(--c),var(--c)) bottom right/1px 12px no-repeat}
+.card:has(.thumb)::after{inset:auto 7px 7px auto;width:12px;height:12px;background:linear-gradient(var(--c),var(--c)) bottom right/12px 1px no-repeat,linear-gradient(var(--c),var(--c)) bottom right/1px 12px no-repeat}
+.card:hover{border-color:color-mix(in srgb,var(--d,var(--teal)) 45%,var(--line))!important;box-shadow:0 12px 28px rgba(16,36,58,.10)}
+.thumb{border-radius:8px 8px 0 0}
+.disc{border-top:3px solid var(--d)!important}.disc .tag{color:var(--d);border-color:color-mix(in srgb,var(--d) 45%,transparent)}.disc .more{color:var(--d)}
+.disc.fire{border-image:linear-gradient(90deg,#0891B2 50%,#DC2626 50%) 1;border-top-width:3px}
+.gh svg{stroke:var(--d,var(--teal))!important;background:color-mix(in srgb,var(--d,var(--teal)) 11%,transparent)!important;border-radius:6px!important}
+.btn{border-radius:6px!important;background:var(--btn);color:#fff}.btn:hover{background:#0B5F75;box-shadow:0 6px 16px rgba(14,116,144,.25)}
+header .btn{background:var(--btn)}.navcta{background:var(--btn)!important;border-radius:6px!important}.navcta:hover{background:#0B5F75!important}
+.btn2{background:transparent!important}.btn2:hover{background:rgba(255,255,255,.08)!important}
+nav#hdr.solid,nav#hdr.open{background:var(--deep)!important}
+nav#hdr ul a::after{background:#22B8D6}
+header{background:linear-gradient(100deg,rgba(16,36,58,.94) 32%,rgba(16,36,58,.45)),url(images/hero/riyadh-commercial-development-mep-construction.webp?v=4) center/cover,var(--deep)!important}
+header .eyebrow{color:#67D5EA}.eyebrow::before{background:#22B8D6}header .stats div{border-color:#22B8D6}
+.tag{border-radius:3px!important;font-size:10.5px;letter-spacing:.06em}
+.proj{border-top:2px solid var(--deep)!important}.proj .tag{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.ctry{border-top:2px solid var(--teal)!important}.member img{border-color:var(--deep)}
+.chipf.on,.chipf:hover{border-color:var(--accent);color:var(--accent)}
+footer{background:#0B1A2B!important}
+@media(max-width:700px){section{background-size:28px 28px!important}.card::after{display:none}}
+#top{background:var(--deep)!important;border:1px solid #22B8D6!important}
 </style>
 </head>
 <body>
@@ -230,28 +270,28 @@ nav#hdr ul a.active{color:#fff}nav#hdr ul a.active::after{transform:scaleX(1)}
 
 <section id="services"><div class="wrap">
 <h2>Services</h2>
-<div class="sgroup"><h3 class="gh"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>MEP Engineering &amp; Technical Services</h3><p class="gsub">Design review, coordination and site supervision across HVAC, electrical, plumbing and fire protection.</p><div class="grid">
-<div class="card"><div class="thumb"><img src="images/bim-design/mep-design-office.webp?v=6" alt="MEP design engineers working on CAD layouts and 3D models" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">MEPF Engineering</span><h3>Design Review</h3><p>HVAC, electrical, fire fighting and plumbing design checks against codes and spec.</p><a class="more" href="services/design-review.html">Learn more →</a></div>
-<div class="card"><div class="thumb"><img src="images/bim-design/mep-bim-coordination-model.webp?v=5" alt="Coordinated MEP services installed in an open ceiling" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Project Management</span><h3>Construction Supervision</h3><p>Site coordination, material approvals, inspections, testing &amp; commissioning.</p><a class="more" href="services/construction-supervision.html">Learn more →</a></div>
+<div class="sgroup"><h3 class="gh" style="--d:#2563EB"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>MEP Engineering &amp; Technical Services</h3><p class="gsub">Design review, coordination and site supervision across HVAC, electrical, plumbing and fire protection.</p><div class="grid">
+<div class="card disc" style="--d:#2563EB"><div class="thumb"><img src="images/bim-design/mep-design-office.webp?v=6" alt="MEP design engineers working on CAD layouts and 3D models" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">MEPF Engineering</span><h3>Design Review</h3><p>HVAC, electrical, fire fighting and plumbing design checks against codes and spec.</p><a class="more" href="services/design-review.html">Learn more →</a></div>
+<div class="card disc" style="--d:#0284C7"><div class="thumb"><img src="images/bim-design/mep-bim-coordination-model.webp?v=5" alt="Coordinated MEP services installed in an open ceiling" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Project Management</span><h3>Construction Supervision</h3><p>Site coordination, material approvals, inspections, testing &amp; commissioning.</p><a class="more" href="services/construction-supervision.html">Learn more →</a></div>
 </div></div>
-<div class="sgroup"><h3 class="gh"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>Commercial &amp; Project Controls</h3><p class="gsub">Cost, programme and contract control from tender to final account.</p><div class="grid">
-<div class="card"><div class="thumb"><img src="images/cost-consultancy/mep-cost-estimation.webp?v=6" alt="Cost estimation workspace with drawings, spreadsheets and calculator" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Commercial Consultancy</span><h3>Estimation &amp; Costing</h3><p>BOQ preparation, quantity take-off, cost plans, value engineering and tender evaluation.</p><a class="more" href="services/estimation-costing.html">Learn more →</a></div>
-<div class="card"><div class="thumb"><img src="images/project-planning/primavera-p6-schedule.webp?v=6" alt="Planning engineer reviewing a Gantt chart schedule on large monitors" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Project Management</span><h3>Project Planning</h3><p>Baseline schedules, resource loading, progress tracking, delay analysis and reporting.</p><a class="more" href="services/project-planning.html">Learn more →</a></div>
-<div class="card"><div class="thumb"><img src="images/cost-consultancy/tendering-procurement-review.webp?v=6" alt="Consultancy team reviewing tender documents and contractor proposals" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Commercial Consultancy</span><h3>Contract Support</h3><p>Variations, claims, subcontractor packages and payment certification.</p><a class="more" href="services/contract-support.html">Learn more →</a></div>
+<div class="sgroup"><h3 class="gh" style="--d:#059669"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>Commercial &amp; Project Controls</h3><p class="gsub">Cost, programme and contract control from tender to final account.</p><div class="grid">
+<div class="card disc" style="--d:#059669"><div class="thumb"><img src="images/cost-consultancy/mep-cost-estimation.webp?v=6" alt="Cost estimation workspace with drawings, spreadsheets and calculator" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Commercial Consultancy</span><h3>Estimation &amp; Costing</h3><p>BOQ preparation, quantity take-off, cost plans, value engineering and tender evaluation.</p><a class="more" href="services/estimation-costing.html">Learn more →</a></div>
+<div class="card disc" style="--d:#7C3AED"><div class="thumb"><img src="images/project-planning/primavera-p6-schedule.webp?v=6" alt="Planning engineer reviewing a Gantt chart schedule on large monitors" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Project Management</span><h3>Project Planning</h3><p>Baseline schedules, resource loading, progress tracking, delay analysis and reporting.</p><a class="more" href="services/project-planning.html">Learn more →</a></div>
+<div class="card disc" style="--d:#059669"><div class="thumb"><img src="images/cost-consultancy/tendering-procurement-review.webp?v=6" alt="Consultancy team reviewing tender documents and contractor proposals" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Commercial Consultancy</span><h3>Contract Support</h3><p>Variations, claims, subcontractor packages and payment certification.</p><a class="more" href="services/contract-support.html">Learn more →</a></div>
 </div></div>
-<div class="sgroup"><h3 class="gh"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg>Facilities Management &amp; Asset Services</h3><p class="gsub">Maintenance strategy, asset data and performance monitoring for operating buildings.</p><div class="grid">
-<div class="card"><div class="thumb"><img src="images/site-work/booster-pump-set.webp?v=5" alt="Booster pump set at a maintained facility" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Digital Engineering &amp; Facilities</span><h3>Facilities Management</h3><p>PPM programmes, asset registers, O&amp;M optimisation and energy efficiency.</p><a class="more" href="services/facilities-management.html">Learn more →</a></div>
+<div class="sgroup"><h3 class="gh" style="--d:#0F766E"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/></svg>Facilities Management &amp; Asset Services</h3><p class="gsub">Maintenance strategy, asset data and performance monitoring for operating buildings.</p><div class="grid">
+<div class="card disc" style="--d:#0F766E"><div class="thumb"><img src="images/site-work/booster-pump-set.webp?v=5" alt="Booster pump set at a maintained facility" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><span class="tag">Digital Engineering &amp; Facilities</span><h3>Facilities Management</h3><p>PPM programmes, asset registers, O&amp;M optimisation and energy efficiency.</p><a class="more" href="services/facilities-management.html">Learn more →</a></div>
 </div></div>
-<div class="sgroup"><h3 class="gh"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1.5-4.5 4-4.5"/></svg>Manpower Supply</h3><p class="gsub">Skilled MEP technicians and supervisors sourced from India. <a class="more" href="#manpower">View manpower services →</a></p></div>
+<div class="sgroup"><h3 class="gh" style="--d:#10243A"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1.5-4.5 4-4.5"/></svg>Manpower Supply</h3><p class="gsub">Skilled MEP technicians and supervisors sourced from India. <a class="more" href="#manpower">View manpower services →</a></p></div>
 </div></section>
 
 <section id="expertise"><div class="wrap">
 <h2>Expertise</h2>
 <div class="grid">
-<div class="card"><div class="thumb"><img src="images/mep-engineering/hvac-chiller-plant-room.webp?v=4" alt="Commercial chiller plant room with insulated chilled-water piping and pumps" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Mechanical</h3><ul><li>HVAC (chillers, AHUs, VRF)</li><li>Heat load calculations</li><li>Ventilation &amp; smoke control</li></ul><a class="more" href="expertise/mechanical.html">Learn more →</a></div>
-<div class="card"><div class="thumb"><img src="images/mep-engineering/lv-electrical-switchgear-room.webp?v=4" alt="LV electrical room with main distribution boards and overhead cable trays" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Electrical</h3><ul><li>LV distribution &amp; load schedules</li><li>Lighting &amp; small power</li><li>ELV, BMS integration</li></ul><a class="more" href="expertise/electrical.html">Learn more →</a></div>
-<div class="card"><div class="thumb"><img src="images/mep-engineering/plumbing-booster-pump-room.webp?v=4" alt="Commercial plumbing plant room with booster pump set and water tanks" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Plumbing &amp; Fire</h3><ul><li>Water supply &amp; drainage</li><li>Fire fighting &amp; alarm</li><li>Pump &amp; tank sizing</li></ul><a class="more" href="expertise/plumbing-fire.html">Learn more →</a></div>
-<div class="card"><div class="thumb"><img src="images/bim-design/bim-building-cutaway.webp?v=6" alt="3D cutaway of a commercial building showing coordinated MEP systems" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Tools</h3><ul><li>AutoCAD, Revit MEP</li><li>Primavera P6, MS Project</li><li>Excel cost models</li></ul><a class="more" href="expertise/tools-software.html">Learn more →</a></div>
+<div class="card disc" style="--d:#0284C7"><div class="thumb"><img src="images/mep-engineering/hvac-chiller-plant-room.webp?v=4" alt="Commercial chiller plant room with insulated chilled-water piping and pumps" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Mechanical</h3><ul><li>HVAC (chillers, AHUs, VRF)</li><li>Heat load calculations</li><li>Ventilation &amp; smoke control</li></ul><a class="more" href="expertise/mechanical.html">Learn more →</a></div>
+<div class="card disc" style="--d:#D97706"><div class="thumb"><img src="images/mep-engineering/lv-electrical-switchgear-room.webp?v=4" alt="LV electrical room with main distribution boards and overhead cable trays" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Electrical</h3><ul><li>LV distribution &amp; load schedules</li><li>Lighting &amp; small power</li><li>ELV, BMS integration</li></ul><a class="more" href="expertise/electrical.html">Learn more →</a></div>
+<div class="card disc fire" style="--d:#0891B2"><div class="thumb"><img src="images/mep-engineering/plumbing-booster-pump-room.webp?v=4" alt="Commercial plumbing plant room with booster pump set and water tanks" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Plumbing &amp; Fire</h3><ul><li>Water supply &amp; drainage</li><li>Fire fighting &amp; alarm</li><li>Pump &amp; tank sizing</li></ul><a class="more" href="expertise/plumbing-fire.html">Learn more →</a></div>
+<div class="card disc" style="--d:#2563EB"><div class="thumb"><img src="images/bim-design/bim-building-cutaway.webp?v=6" alt="3D cutaway of a commercial building showing coordinated MEP systems" width="640" height="360" loading="lazy" decoding="async" onerror="this.remove()"></div><h3>Tools</h3><ul><li>AutoCAD, Revit MEP</li><li>Primavera P6, MS Project</li><li>Excel cost models</li></ul><a class="more" href="expertise/tools-software.html">Learn more →</a></div>
 </div></div></section>
 
 <section id="manpower"><div class="wrap">

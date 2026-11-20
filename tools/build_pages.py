@@ -27,24 +27,24 @@ for s in SERVICES:  # footer service links -> service pages
     FOOT = FOOT.replace(f'<a href="../index.html#services">{E(s["title"][0])}</a>', f'<a href="../services/{s["slug"]}.html">{E(s["title"][0])}</a>')
 
 def card_of(title):
-    m = re.search(r'<div class="card"><div class="thumb"><img src="([^"?]*)[^"]*" alt="([^"]*)"[^>]*></div><span class="tag">([^<]*)</span><h3>' + re.escape(E(title)) + r'</h3><p>([^<]*)</p>', idx)
+    m = re.search(r'<div class="card[^"]*"[^>]*><div class="thumb"><img src="([^"?]*)[^"]*" alt="([^"]*)"[^>]*></div><span class="tag">([^<]*)</span><h3>' + re.escape(E(title)) + r'</h3><p>([^<]*)</p>', idx)
     return m.groups()
 def blog_of(i):
     m = re.findall(r'<div class="card"><div class="thumb"><img src="([^"?]*)[^"]*" alt="([^"]*)"[^>]*></div><small class="date">([^<]*)</small><h3>([^<]*)</h3>', idx)
     return m[i]
 
 EXTRA = '''
-header.ph{padding:150px 0 72px!important;background:linear-gradient(100deg,rgba(16,31,53,.95) 35%,rgba(16,31,53,.55)),var(--img) center/cover,#101F35!important}
+header.ph{padding:150px 0 72px!important;background:linear-gradient(100deg,rgba(16,36,58,.95) 35%,rgba(16,36,58,.55)),var(--img) center/cover,#10243A!important}
 header.ph h1{font-size:clamp(30px,4.6vw,48px)}header.ph .tag{color:#7DD8E6;border-color:rgba(125,216,230,.5);margin-bottom:14px}
 .crumbs{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;color:#B8C4CE;margin:0 0 18px!important}.crumbs a{color:#D5DEE6}.crumbs a:hover{color:#7DD8E6}
-.split{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}.split img{width:100%;height:auto;border-radius:14px;display:block;box-shadow:0 14px 32px rgba(16,31,53,.12)}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}.split img{width:100%;height:auto;border-radius:14px;display:block;box-shadow:0 14px 32px rgba(16,36,58,.12)}
 .lead2{font-size:18px;line-height:1.8;color:var(--ink)}
 .checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;list-style:none;padding:0}
 .checks li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 48px;position:relative}
 .checks li::before{content:"\\2713";position:absolute;left:18px;top:15px;color:var(--teal);font-weight:700}
 [dir=rtl] .checks li{padding:16px 48px 16px 18px}[dir=rtl] .checks li::before{left:auto;right:18px}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;counter-reset:s}
-.step{position:relative;padding-top:56px!important}.step .n{position:absolute;top:18px;left:22px;font-family:Montserrat,Inter,sans-serif;font-weight:800;font-size:28px;color:var(--teal);opacity:.9}
+.step{position:relative;padding-top:56px!important}.step .n{position:absolute;top:18px;left:22px;font-family:Manrope,Inter,sans-serif;font-weight:800;font-size:28px;color:var(--teal);opacity:.9}
 [dir=rtl] .step .n{left:auto;right:22px}
 .sys h3{margin-bottom:10px!important}.sys ul{padding-left:18px}[dir=rtl] .sys ul{padding-left:0;padding-right:18px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
@@ -74,7 +74,7 @@ def page(title, desc, path, img, body, strings):
 <meta property="og:title" content="{E(title)} | Azmi MEP Consultants"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="https://athar9793.github.io/Athar9793/{img}">
 <link rel="icon" href="../branding/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>{CSS}{EXTRA}</style>
 </head>
 <body>
