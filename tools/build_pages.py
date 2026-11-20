@@ -34,10 +34,10 @@ def blog_of(i):
     return m[i]
 
 EXTRA = '''
-header.ph{padding:150px 0 72px!important;background:linear-gradient(100deg,rgba(16,42,67,.95) 35%,rgba(16,42,67,.55)),var(--img) center/cover,#102A43!important}
-header.ph h1{font-size:clamp(30px,4.6vw,48px)}header.ph .tag{color:#7FE0E0;border-color:rgba(127,224,224,.5);margin-bottom:14px}
-.crumbs{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;color:#B8C4CE;margin:0 0 18px!important}.crumbs a{color:#D5DEE6}.crumbs a:hover{color:#7FE0E0}
-.split{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}.split img{width:100%;height:auto;border-radius:14px;display:block;box-shadow:0 14px 32px rgba(16,42,67,.12)}
+header.ph{padding:150px 0 72px!important;background:linear-gradient(100deg,rgba(16,31,53,.95) 35%,rgba(16,31,53,.55)),var(--img) center/cover,#101F35!important}
+header.ph h1{font-size:clamp(30px,4.6vw,48px)}header.ph .tag{color:#7DD8E6;border-color:rgba(125,216,230,.5);margin-bottom:14px}
+.crumbs{display:flex;gap:8px;flex-wrap:wrap;font-size:14px;color:#B8C4CE;margin:0 0 18px!important}.crumbs a{color:#D5DEE6}.crumbs a:hover{color:#7DD8E6}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}.split img{width:100%;height:auto;border-radius:14px;display:block;box-shadow:0 14px 32px rgba(16,31,53,.12)}
 .lead2{font-size:18px;line-height:1.8;color:var(--ink)}
 .checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;list-style:none;padding:0}
 .checks li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px 16px 48px;position:relative}
